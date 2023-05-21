@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -41,5 +42,16 @@ class LoginController extends Controller
     public function showLoginForm()
     {
         return view('backend.auth.login');
+    }
+
+    protected function logout(Request $request)
+    {
+        $this->guard()->logout();
+
+        $request->session()->flush();
+
+        $request->session()->regenerate();
+
+        return redirect('/login');
     }
 }

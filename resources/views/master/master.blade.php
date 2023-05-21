@@ -12,19 +12,19 @@
                         <div class="navbar-brand-box">
                             <a href="" class="logo logo-dark">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo.svg" alt="" height="22">
+                                    <img src="assets/images/logo.png" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-dark.png" alt="" height="17">
+                                    <img src="assets/images/logo.png" alt="" height="17">
                                 </span>
                             </a>
 
                             <a href="" class="logo logo-light">
                                 <span class="logo-sm">
-                                    <img src="assets/images/logo-light.svg" alt="" height="22">
+                                    <img src="assets/images/logo.png" alt="" height="22">
                                 </span>
                                 <span class="logo-lg">
-                                    <img src="assets/images/logo-light.png" alt="" height="19">
+                                    <img src="assets/images/logo_long.png" alt="" class="image-fluid" height="70">
                                 </span>
                             </a>
                         </div>
@@ -40,7 +40,7 @@
                         <div class="dropdown d-inline-block">
                             <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                <img class="rounded-circle header-profile-user" src="assets/images/Admin-Profile-PNG-Clipart.png"
                                     alt="Header Avatar">
                                 <span class="d-none d-xl-inline-block ml-1">{{Auth()->user()->name}}</span>
                                 <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
